@@ -3,7 +3,7 @@ import './banner.css'
 import axios from '../axios'
 import request from '../requests'
 
-const BASE_URL = "https://image.tmdb.org/t/p/original/"
+// const BASE_URL = "https://image.tmdb.org/t/p/original/"
 
 const Banner = () => {
     const [movie, setMovie] = useState({});
@@ -23,7 +23,6 @@ const Banner = () => {
     }, [])
 
     const truncate = (str, n) => {
-        console.log(str);
         return str.length > n ? str.substring(0, n - 1) + "..." : str
     }
     if (movie.overview) {
